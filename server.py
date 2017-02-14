@@ -12,5 +12,5 @@ class Handler(http.BaseHTTPRequestHandler):
     self.wfile.write("%s: HELLO, I AM ALIVE!!!\n" % platform.node())
 
 if __name__ == '__main__':
-  httpd = http.HTTPServer(('',80),Handler)
+  httpd = http.HTTPServer(('',8080),Handler)
   httpd.serve_forever()
